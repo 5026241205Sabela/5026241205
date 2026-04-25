@@ -17,3 +17,35 @@ Route::get('pert5', function () {
 });
 Route::get('dosen', [DosenController::class, 'index']);
 Route::get('biodata', [DosenController::class, 'biodata']);
+
+Route::get('index', function () {
+	return view('index');
+});
+
+Route::get('linktree', function () {
+	return view('linktree');
+});
+
+Route::get('nrp', function () {
+	return view('5026241205');
+});
+
+Route::get('contribution', function () {
+	return view('contribution');
+});
+
+Route::get('intro', function () {
+	return view('intro');
+});
+
+Route::get('news', function () {
+	return view('news');
+});
+
+Route::get('berita', function () {
+	return view('news1');
+});
+
+Route::get('template', function () {
+	return view('responsivetemmplate');
+});
