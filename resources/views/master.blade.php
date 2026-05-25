@@ -38,7 +38,6 @@
         <!-- bagian judul halaman blog -->
         <h3> @yield('judul_halaman') </h3>
 
-
         <!-- bagian konten blog -->
         @yield('konten')
 
