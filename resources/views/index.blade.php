@@ -1,17 +1,22 @@
-@extends(template)
-@section('title', 'Edit Pegawai')
+@extends('template')
+
+@section('title', 'Data Pegawai')
 <!-- cara penulisan isi section yang panjang -->
 @section('konten')
     <center>
         <br />
         <br />
+        <br />
+        <br />
+        <br />
+        <br />
         <p>Cari Data Pegawai :</p>
-	<form action="/pegawaicari" method="GET">
-		<input type="text" name="cari" placeholder="Cari Pegawai .." class="form-control">
-		<input type="submit" value="CARI"  class="btn btn-secondary">
-	</form>
+        <form action="/pegawaicari" method="GET">
+            <input type="text" name="cari" placeholder="Cari Pegawai .." class="form-control">
+            <input type="submit" value="CARI" class="btn btn-secondary">
+        </form>
 
-	<br/>
+        <br />
         <table class="table table-striped table-hover">
             <tr>
                 <th>Nama</th>
@@ -35,8 +40,9 @@
             @endforeach
         </table>
         <ul class="pagination" style="margin:20px 0">
-        {{ $pegawai->links() }}
-        <a href="/pegawaitambah" class="btn btn-primary">Tambah Pegawai Baru</a>
+            {{ $pegawai->links() }}
+        </ul>
+            <a href="/pegawaitambah" class="btn btn-primary">Tambah Pegawai Baru</a>
 
     </center>
 @endsection

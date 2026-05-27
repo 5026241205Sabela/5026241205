@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
-    <title>5026241205 Husna Sabela</title>
+    <title>5026241205 - Husna Sabela</title>
     <meta name="description" content="">
     <meta name="keywords" content="">
 
@@ -54,7 +54,7 @@
                     <li><a href="">PR 1</a></li>
                     <li><a href="">PR 2</a></li>
                     <li><a href="">Pertemuan 15</a></li>
-                    <li><a href="">UAS</a></li>
+                    <li><a href="">EAS</a></li>
                 </ul>
                 <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
             </nav>
@@ -66,7 +66,7 @@
         <!-- bagian konten blog -->
         @yield('konten')
 </main>
-</body>
+
 
 <!-- Scroll Top -->
 <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i
@@ -88,7 +88,7 @@
 <!-- Main JS File -->
 <script src="assets/js/main.js"></script>
 
-</header>
+
 </body>
 
 </html>

@@ -62,9 +62,9 @@ Route::get('/blog', [BlogController::class, 'home']);
 Route::get('/blog/tentang', [BlogController::class, 'tentang']);
 Route::get('/blog/kontak', [BlogController::class, 'kontak']);
 
-Route::get('/pegawai', [PegawaDBController::class, 'index']);
-Route::get('/pegawaitambah', [PegawaDBController::class, 'tambah']);
-Route::post('/pegawaistore', [PegawaDBController::class, 'store']);
-Route::get('/pegawaiedit/{id}', [PegawaDBController::class, 'edit']);
-Route::post('/pegawaiupdate', [PegawaDBController::class, 'update']);
-Route::get('/pegawaihapus/{id}', [PegawaDBController::class, 'hapus']);
+Route::get('/pegawai', [PegawaiDBController::class, 'index']);
+Route::get('/pegawaitambah', [PegawaiDBController::class, 'tambah']);
+Route::post('/pegawaistore', [PegawaiDBController::class, 'store']);
+Route::get('/pegawaiedit/{id}', [PegawaiDBController::class, 'edit']);
+Route::post('/pegawaiupdate', [PegawaiDBController::class, 'update']);
+Route::get('/pegawaihapus/{id}', [PegawaiDBController::class, 'hapus']);
