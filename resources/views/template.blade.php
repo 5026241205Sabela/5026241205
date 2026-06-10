@@ -120,10 +120,13 @@
                         <a class="nav-link active" href="/pegawai">Pegawai</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="/meja">Lampu</a>
+                        <a class="nav-link" href="/lampu">Lampu</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="/nilaikuliah">PR 2</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/keranjangbelanja">PR 3</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">EAS</a>

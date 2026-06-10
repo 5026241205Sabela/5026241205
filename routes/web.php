@@ -6,6 +6,8 @@ use App\Http\Controllers\PegawaiController ;
 use App\Http\Controllers\BlogController ;
 use App\Http\Controllers\PegawaiDBController ;
 use App\Http\Controllers\NilaiKuliahController ;
+use App\Http\Controllers\keranjangController ;
+use App\Http\Controllers\lampuController ;
 
 Route::get('/pegawai/',[PegawaiDBController::class, 'index']);
 
@@ -74,3 +76,12 @@ Route::get('/pegawaihapus/{id}', [PegawaiDBController::class, 'hapus']);
 Route::get('/nilaikuliah', [NilaiKuliahController::class, 'index']);
 Route::get('/tambahnilai', [NilaiKuliahController::class, 'tambah']);
 Route::post('/nilaistore', [NilaiKuliahController::class, 'store']);
+
+Route::get('/keranjangbelanja', [keranjangController::class, 'index_keranjang']);
+Route::get('/keranjangbeli/{id}', [keranjangController::class, 'beli']);
+Route::post('/keranjangstore', [keranjangController::class, 'storeKeranjang']);
+Route::get('/keranjangbatal/{id}', [keranjangController::class, 'batal']);
+
+Route::get('/lampu', [lampuController::class, 'index']);
+Route::get('/tambahlampu', [lampuController::class, 'tambah']);
+Route::post('/lampustore', [lampuController::class, 'store']);
