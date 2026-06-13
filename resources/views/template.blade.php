@@ -123,6 +123,9 @@
                         <a class="nav-link" href="/lampu">Lampu</a>
                     </li>
                     <li class="nav-item">
+                        <a class="nav-link" href="/siswa">Siswa</a>
+                    </li>
+                    <li class="nav-item">
                         <a class="nav-link" href="/nilaikuliah">PR 2</a>
                     </li>
                     <li class="nav-item">
