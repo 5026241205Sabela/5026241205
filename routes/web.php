@@ -9,6 +9,7 @@ use App\Http\Controllers\NilaiKuliahController ;
 use App\Http\Controllers\keranjangController ;
 use App\Http\Controllers\lampuController ;
 use App\Http\Controllers\SiswaController;
+use App\Http\Controllers\tagihanAirController;
 
 Route::get('/pegawai/',[PegawaiDBController::class, 'index']);
 
@@ -96,3 +97,8 @@ Route::get('/siswa/{nrp}/edit', [SiswaController::class, 'edit'])->name('siswa.e
 Route::put('/siswa/{nrp}', [SiswaController::class, 'update'])->name('siswa.update');
 Route::delete('/siswa/{nrp}', [SiswaController::class, 'destroy'])->name('siswa.destroy');
 // ini pake alias biar ga gampang ketebak (policy)
+
+//route CRUD EAS
+Route::get('/eas', [tagihanAirController::class, 'index'])->name('eas');
+Route::get('/tambahTagihan', [tagihanAirController::class, 'tambahTagihan']);
+Route::post('/tagihanstore', [tagihanAirController::class, 'store'])->name('tagihanstore');

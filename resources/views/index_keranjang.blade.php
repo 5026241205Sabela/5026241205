@@ -4,9 +4,6 @@
 @section('title', 'Data Keranjang')
 @section('konten')
     <center>
-        <br />
-        <br />
-        <br />
         <table class="table table-striped table-hover">
             <tr>
                 <th>Kode Pembelian</th>
